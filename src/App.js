@@ -44,9 +44,7 @@ class App extends Component {
             <Route path="/quiz-creator" element={<Quiz />} />
             { this.state.login ? <Route path="/about" exact element={<About aboutLinks={aboutLinks.links} />} /> : null }
             
-            <Route
-              path="/quiz/:id"
-              element={<AboutDetails />} />
+            <Route path="/quiz/:id"  element={<AboutDetails />} />
               
             {/* <Route
               path="/about/:name"
