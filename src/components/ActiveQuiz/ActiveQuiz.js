@@ -1,16 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import classes from './ActiveQuiz.module.css';
 import AnswersList from './AnswersList/AnswersList.js'
+import { useNavigate } from 'react-router-dom';
 
-const ActiveQuiz = props => (
-            <div className={classes.ActiveQuiz}>
-                <p className={classes.Question}> 
-                    <strong>1 { props.question }</strong>
-                    <small>1 from 5</small>
-                </p>
+const ActiveQuiz = props => {
 
-                <AnswersList answers={props.answers} onAnswerClickHandler={props.onAnswerClickHandler} />
-            </div>
-)
+    return (
+        <div className={classes.ActiveQuiz}>
+            <p className={classes.Question}>
+                <strong>{props.activeQuestionNum}. {props.question}</strong>
+                <small>{props.activeQuestionNum} from {props.quizLength}</small>
+            </p>
+
+            <AnswersList
+                answers={props.answers}
+                onAnswerClickHandler={props.onAnswerClickHandler}
+                answerState={props.answerState}
+            />
+        </div>
+    )
+}
 
 export default ActiveQuiz

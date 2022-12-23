@@ -12,3 +12,11 @@
 .AnswerItem:hover{
     opacity: 0.5;
 }
+
+.AnswerItem.success{
+    background: green ;
+}
+
+.AnswerItem.error{
+    background: red;
+}

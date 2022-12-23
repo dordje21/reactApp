@@ -1,0 +1,25 @@
+.Finished{
+    color: aliceblue;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+li i{
+    margin-left: 5px;
+}

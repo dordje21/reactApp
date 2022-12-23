@@ -1,0 +1,24 @@
+.MenuToggle{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: aliceblue;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all ease-in .22s;
+    z-index: 90;
+}
+
+.MenuToggle:hover{
+    opacity: 0.5;
+}
+
+.MenuToggle.open{
+    left: 350px;
+}
+
+@media screen and (max-width: 460px) {
+    .MenuToggle.open{
+        left: 90%;
+    }
+}

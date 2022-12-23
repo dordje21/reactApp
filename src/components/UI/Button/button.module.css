@@ -1,0 +1,35 @@
+.Button{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #34F;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    color: aliceblue;
+    margin: 15px 0;
+    font-weight: bold;
+    background: rgb(242,39,39);
+background: linear-gradient(90deg, rgba(242,39,39,1) 0%, rgba(12,115,219,1) 52%, rgba(139,0,255,1) 100%);
+}
+
+.Button:focus{
+    outline: none;
+}
+
+.Button:active{
+    box-shadow: inset 2px 2px 1px #000;
+}
+
+.Button:disabled{
+    background-color: #ccc;
+    color: #000;
+    cursor: not-allowed;
+}
+
+.error{
+ background-color: red ;
+}
+
+.success{
+    background-color: greenyellow;
+}

@@ -8,6 +8,7 @@ const ActiveList = props => (
             return(
             <AnswerItem key={index} answer={answer} 
             onAnswerClickHandler={props.onAnswerClickHandler}
+            answerState={props.answerState ? props.answerState[answer.id] : null}
             />
             )
         }) }
