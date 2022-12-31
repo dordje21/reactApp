@@ -1,0 +1,19 @@
+.Select select {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 32px;
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 14px;
+    background: #fff0;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3 ease-in-out;
+}
+
+.Select select::placeholder{
+    color: white;
+}

@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 
 const links = [
     { href: '/', title: 'home' },
-    { href: '/about', title: 'about' },
-    { href: '/contact', title: 'contact' }
+    { href: '/auth', title: 'auth' },
+    { href: '/quiz-creator', title: 'quiz creator' }
 ]
 
 class Drawer extends Component {
@@ -19,7 +19,7 @@ class Drawer extends Component {
         return links.map((link, index) => {
             return (
                 <li key={index}>
-                    <NavLink to={link.href} exact 
+                    <NavLink to={link.href} exact
                     className={({ isActive }) => isActive ? 'my-active' : undefined }
                     onClick={this.clickHandlerClose} >{link.title}</NavLink>
                 </li>

@@ -1,0 +1,15 @@
+.QuizCreator{
+    display: flex;
+    flex-direction: column;
+}
+
+.QuizCreator form {
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}

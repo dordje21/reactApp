@@ -12,6 +12,10 @@
 background: linear-gradient(90deg, rgba(242,39,39,1) 0%, rgba(12,115,219,1) 52%, rgba(139,0,255,1) 100%);
 }
 
+.Button:disabled{
+    opacity: 0.3;
+}
+
 .Button:focus{
     outline: none;
 }

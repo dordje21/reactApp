@@ -44,7 +44,7 @@ const Finished = props => {
             >
                 Retry
             </Button>
-            <Link to="/about">
+            <Link to="/">
                 <Button type="success">
                     Get home page
                 </Button>
